@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+require('dotenv').config()
 const path = require('path');
 const User = require('./Detail');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const multer = require('multer');
 app.use('/Public', express.static(path.join(__dirname, './public/')))
