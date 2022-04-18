@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-box {
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 15px 10px 15px;
+    color: rgb(17, 17, 17);
+    background-color: aqua;
+    border: 1px solid black;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}

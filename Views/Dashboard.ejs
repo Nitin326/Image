@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <% if(records.length>0){ %>
+                    <% records.forEach(function(info){ %>
+                        <div class="card" style="width: 100%; border: 1px solid black;  padding: 10px; margin: 10px;">
+                            <img class="card-img-top"
+                                src="../Public/Upload/<%= info.image %>"
+                                alt="Card image cap" height="250px" width="250px">
+                        </div>
+                        <% })} else{ %>
+                            <h3 style="text-align: center;"><i class='fas fa-frown'></i> Sorry No Result Found
+                            </h3>
+                            <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
